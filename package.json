@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "SET NODE_ENV=production npm run clean && webpack -p",
+    "build": "npm run clean && webpack -p",
     "serve": "webpack-dev-server",
-    "deploy": "npm run build && git subtree push --prefix dist cat gh-pages",
-    "heroku-postbuild": "ng build --prod" // this will be run on Heroku
+    "deploy": "npm run build && git subtree push --prefix dist cat gh-pages"
   },
   "engines": {
     "node": "11.2.0",
