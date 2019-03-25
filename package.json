@@ -9,6 +9,9 @@
     "serve": "webpack-dev-server",
     "deploy": "npm run build && git subtree push --prefix dist cat gh-pages"
   },
+  "engines": {
+    "node": "11.2.0"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
